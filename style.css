@@ -17,13 +17,12 @@ main{
 }
 
 .logo{
-    width: 155px;
+    width: 205px;
+    margin-top: 15px;
+    height: 75px;
+
 }
-.titleHeader{
-    font-size: 36px;
-    align-self: center;
-    margin-right: 600px;
-}
+
 nav{
     display: flex;
     width: 300px;
