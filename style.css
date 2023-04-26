@@ -1,120 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;700&family=Jost:wght@300;400;700&display=swap');
+
 *{
     margin: 0px;
-    padding: 0px;
+    font-family: 'Jost', sans-serif;
 }
-.headers{
+
+header{
     background-color: #FF7F99;
+    height: 100px;
     display: flex;
     justify-content: space-between;
-    width: 1400px;
-    height: 100px;
+    align-items: center;
+    padding: 0px 60px;
 }
-
-main{
-    padding: 20px;
-    margin:0px 20px;
-    position: relative;
-}
-
 .logo{
-    width: 205px;
-    margin-top: 15px;
-    height: 75px;
-
+    font-family: 'Alumni Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 48px;
+    align-items: baseline;
 }
-
-nav{
-    display: flex;
-    width: 300px;
+.logo-studio{
+    font-family: 'Alumni Sans', sans-serif;
+    color: #FFCA41;
 }
-
-.button{
-    border: none;
-    font-size: 18px;
-    margin: 10px;
+nav a{
+    text-decoration: none;
     color: white;
-    justify-content: center;
-    background-color: #FF7F99;
-} 
-
-#buttonRadius{
-    margin: 30px 10px;
-    border: 1px solid #FFCA41;
-    width: 130px;
-    border-radius: 20px;
-    background-color: salmon;
 }
-.container{
+nav a {
+    font-weight: 300;
+    font-size: 24px;
+    margin-left: 55px;
+}
+nav a:hover{
+    color: #FFCA41;
+}
+.button-contact{
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    background-color: #FF9593;
+    border: 1px solid #FFCA41;
+    border-radius: 35px;
+    padding: 10px 40px;
+    margin-left: 45px;
+}
+.button-contact:hover{
+    background-color: #FFCA41;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg-div{
+    background-color: #FF7F99;
+    border-radius: 272px 0px 272px 272px;
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 37px 150px;
+}
+
+img.coders{
+    height: 454px;                     
+}
+
+.main-text{
+    width: 514px;
+    padding-bottom: 40px;
+}
+h1{
+    font-size: 96px;
+    line-height: 70px;
+    font-weight: 400;
+    color: #CD5C6E;
+}
+h3{
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+button.action{
+    background-color: #FFCA41;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 25px;
+}
+footer{
+    background-color: #FF7F99;
+    display: flex;
+}
+footer img{
+    height: 277px;
+}
+img.icon{
+    height: 42px;
+    border-radius: 6px;
+}
+ul{
+    list-style: none;
+    text-align: center;
     display: flex;
     justify-content: space-around;
-
-}
-.containerImg{
-    background-color: #FF7F99;
-    margin-left: 25px;
-    width: 450px;
-    height: 450px;
-    border-radius: 200px 0px 200px 200px;
-}
-.codersImg{
-    width: 210px;
-    margin-top: 25px;
-    margin-left: 125px;
-}
-
-.containerContact{
-    width: 250px;
-    margin-top: 100px;
-}
-.tittleInfo{
-    color: #FF7F99;
-    font-size: 48px;
-    margin: 0px;
-}
-
-.info{
-    font-size: 18px;
-    margin: 0px;
-}
-
-.contacto{
-    background-color: #FFCA41;
-    margin-top: 20px;
-    border: none;
-    width: 130px;
-    height: 40px;
-    border-radius: 30px;
-    color: white;
-    font-size: 17px;
-}
-
-footer{
-    margin-top: 20px;
-    background-color: #FF7F99;
     width: 1400px;
-    height: 500px;
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 45px 45px 90px 45px;
 }
-.developer{
-    width: 277px;
+ul li:first-of-type{
+    padding-left: 20px;
 }
-a{
+a.card span:nth-child(2){
+    color: white;
+    font-size: 24px;
+    margin-top: -20px;
+    
+}
+a.card span:nth-child(3){
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+}
+a.card{
     display: flex;
-    font-size: 17px;
-    color:white;
-    justify-content: center;
+    flex-direction: column;
+    margin-left: -20px;
     text-decoration: none;
 }
-p{
-    display: flex;
-    color: black;
-    padding: 5px;
-    justify-content: center;
-}
-
-.logoLinkedin{
-    padding: 10px;
-    width: 45px;
-}
-
-
