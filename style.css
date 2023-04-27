@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;700&family=Jost:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;700&family=Jost:wght@200;400&display=swap');
 
 *{
     margin: 0px;
     font-family: 'Jost', sans-serif;
 }
-
+/*header*/
 header{
     background-color: #FF7F99;
     height: 100px;
@@ -28,52 +28,58 @@ nav a{
     color: white;
 }
 nav a {
-    font-weight: 300;
+    font-weight: 200;
     font-size: 24px;
     margin-left: 55px;
 }
 nav a:hover{
     color: #FFCA41;
 }
+.link-button{
+    margin: 0;
+}
 .button-contact{
     color: white;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 200;
+    letter-spacing: em;
     background-color: #FF9593;
     border: 1px solid #FFCA41;
     border-radius: 35px;
-    padding: 10px 40px;
+    padding: 8px 40px;
     margin-left: 45px;
 }
 .button-contact:hover{
     background-color: #FFCA41;
 }
-
-.halo{
-    display: flex;
-    justify-content: space-evenly;
+/*main page flexbox with 2 divs*/
+.hero-main{
+    display: flex; 
+    width: 85%;
     align-items: center;
-    width: 95%;
-    padding: 2.5em 1em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
+/*part left*/
 .bg-div{
     background-color: #FF7F99;
     border-radius: 272px 0px 272px 272px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 37px 150px;
+    margin: 40px;
+    width: 544px;
+    height: 544px;
 }
-
 img.coders{
-    height: 454px;                     
+    height: 454px;
+    margin: 150px;                     
 }
-
+/*part right*/
 .main-text{
-    width: 514px;
-    padding-bottom: 40px;
+    width: 520px;
+    margin-left: 80px;
+    padding-bottom: 60px;
 }
 h1{
     font-size: 96px;
@@ -87,15 +93,60 @@ h3{
     margin-top: 20px;
     margin-bottom: 25px;
 }
-button.action{
+button.action-main, button.action{
     background-color: #FFCA41;
-    border-radius: 25px;
+    border-radius: 35px;
     color: white;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 400;
     border: none;
-    padding: 15px 25px;
+    padding: 15px 40px;
 }
+/*personal page flexbox with 2 divs*/
+.hero{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+/*part left*/
+.box-left{
+    position: relative;
+    box-sizing: border-box;
+}
+.girls{
+    position: absolute;
+    height: 615px; 
+    top: 2px;
+    left: -34px;          
+}
+.bg{
+    background-color: #FF7F99;
+    border-radius: 272px 0px 272px 272px;
+    width: 544px;
+    height: 544px;
+    margin: 40px 0;
+}
+/*part right*/
+.main-text2{
+    padding-top: 80px;
+    width: 520px;
+    margin-left: 80px;
+}
+.text{
+    font-size: 20px;
+    text-align: justify;
+}
+.contacts{
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+}
+button.action{
+    padding: 10px 40px;
+}
+
+/*footer*/
 footer{
     background-color: #FF7F99;
     display: flex;
@@ -104,8 +155,10 @@ footer img{
     height: 277px;
 }
 img.icon{
-    height: 42px;
+    height: 49px;
+    width: 49px;
     border-radius: 6px;
+    margin-right: 20px;
 }
 ul{
     list-style: none;
@@ -123,8 +176,8 @@ ul li:first-of-type{
 a.card span:nth-child(2){
     color: white;
     font-size: 24px;
+    font-weight: 300;
     margin-top: -20px;
-    
 }
 a.card span:nth-child(3){
     font-size: 18px;
@@ -137,28 +190,51 @@ a.card{
     margin-left: -20px;
     text-decoration: none;
 }
-@media screen and (max-width: 1300px) {
+/*for small laptops and big tablets*/
+@media screen and (max-width: 1201px) {
     header{
         padding: 0 1em;
     }
     .bg-div{
         display: none;
     }
-    .halo{
+    .hero-main{
         padding: 5em;
-        justify-content: center;
+        justify-content: space-evenly;
         text-align: center;
+    }
+    .main-text{
+        margin-left: 0px;
     }
     ul {
         flex-wrap: wrap;
     }
-}
-@media screen and (max-width:375px) {
-    div.main-text{
-        width: 400px;
+    .hero{
+        align-items: unset;
     }
-    div.halo{
-        padding: 0em;
+    .bg{
+        width: 250px;
+        height: 250px;
+        border-radius: 125px 0 125px 125px;
+        margin: 0px;
+    }
+    .girls{
+        height: 277px; 
+        top: -13px;
+        left: -13px;          
+    }
+    .main-text2{
+        padding: 0;
+    }
+    .hero{
+        padding: 40px;
+        justify-content: center;
+    }
+}
+/* in process...
+@media screen and (max-width: 576px) {
+    div.hero-main{
+        padding: 80px 0;
         justify-content: center;
         text-align: center;
     }
