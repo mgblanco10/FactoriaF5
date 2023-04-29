@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;700&family=Jost:wght@200;400&display=swap');
-
+:root{
+    --main-color:#FF7F99;
+    --second-color: #FFCA41;
+    --white: #FFFFFF;
+}
 *{
     margin: 0px;
     font-family: 'Jost', sans-serif;
 }
 /*header*/
 header{
-    background-color: #FF7F99;
+    background-color: var(--main-color);
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -15,17 +19,17 @@ header{
 }
 .logo{
     font-family: 'Alumni Sans', sans-serif;
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 48px;
     align-items: baseline;
 }
 .logo-studio{
     font-family: 'Alumni Sans', sans-serif;
-    color: #FFCA41;
+    color: var(--second-color);
 }
 nav a{
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 nav a {
     font-weight: 200;
@@ -33,24 +37,24 @@ nav a {
     margin-left: 55px;
 }
 nav a:hover{
-    color: #FFCA41;
+    color:var(--second-color);
 }
 .link-button{
     margin: 0;
 }
 .button-contact{
-    color: white;
+    color: var(--white);
     font-size: 24px;
     font-weight: 200;
     letter-spacing: em;
     background-color: #FF9593;
-    border: 1px solid #FFCA41;
+    border: 1px solid var(--second-color);
     border-radius: 35px;
     padding: 8px 40px;
     margin-left: 45px;
 }
 .button-contact:hover{
-    background-color: #FFCA41;
+    background-color: var(--second-color);
 }
 /*main page flexbox with 2 divs*/
 .hero-main{
@@ -62,7 +66,7 @@ nav a:hover{
 }
 /*part left*/
 .bg-div{
-    background-color: #FF7F99;
+    background-color: var(--main-color);
     border-radius: 272px 0px 272px 272px;
     display: flex;
     justify-content: center;
@@ -94,9 +98,9 @@ h3{
     margin-bottom: 25px;
 }
 button.action-main, button.action{
-    background-color: #FFCA41;
+    background-color: var(--second-color);
     border-radius: 35px;
-    color: white;
+    color: var(--white);
     font-size: 24px;
     font-weight: 400;
     border: none;
@@ -121,7 +125,7 @@ button.action-main, button.action{
     left: -34px;          
 }
 .bg{
-    background-color: #FF7F99;
+    background-color: var(--main-color);
     border-radius: 272px 0px 272px 272px;
     width: 544px;
     height: 544px;
@@ -148,7 +152,7 @@ button.action{
 
 /*footer*/
 footer{
-    background-color: #FF7F99;
+    background-color: var(--main-color);
     display: flex;
 }
 footer img{
@@ -174,7 +178,7 @@ ul li:first-of-type{
     padding-left: 20px;
 }
 a.card span:nth-child(2){
-    color: white;
+    color: var(--white);
     font-size: 24px;
     font-weight: 300;
     margin-top: -20px;
