@@ -339,6 +339,19 @@ input, textarea {
 
 @media only screen and (max-width: 600px)
 {
+    .main-form {
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
+    }
+
+    .p-form {
+        font-size: 1.5rem;
+    }
+
+    form {
+        background-color: #FFFFFF;
+    }
+
     #reset, #submit {
     font-size: 1.4vw;
     }
@@ -346,6 +359,15 @@ input, textarea {
 
 @media only screen and (max-width: 992px)
 {
+    .main-form {
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .p-form {
+        font-size: 1.5rem;
+    }
+
     #reset, #submit {
     font-size: 1rem;
     }
