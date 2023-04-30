@@ -243,3 +243,110 @@ a.card{
         text-align: center;
     }
 }
+
+/* ****** ContactForm Style ******* */
+
+.link-index {
+    text-decoration: none;
+}
+
+.main-form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.title-form, .p-form {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.title-form {
+    font-size: 3.75rem;
+}
+
+.p-form {
+    font-size: 1.5rem;
+    margin-block-start: 0;
+}
+
+form {
+    background-color: rgba(255, 202, 65, 0.8);
+    /*width: 50vw;*/
+    margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: none;
+    border-bottom: 2px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select {
+    margin: 0.625rem 0 0 0;
+    width: 100%;
+    border-radius: 10px;.
+}
+
+input, textarea {
+    background-color: #FF9593;
+    opacity: 0.9;
+    border: 1px solid white;
+}
+
+#data-treatment {
+    width: unset;
+    margin: 0 0.5em 0 0;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+}
+
+#reset, #submit {
+    margin: 1em auto;
+    background-color: #FF7F99;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    height: 35px;
+    font-size: 1.4vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+@media only screen and (max-width: 600px)
+{
+    #reset, #submit {
+    font-size: 1.4vw;
+    }
+}
+
+@media only screen and (max-width: 992px)
+{
+    #reset, #submit {
+    font-size: 1rem;
+    }
+}
