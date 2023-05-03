@@ -34,7 +34,7 @@ nav a{
 nav a {
     font-weight: 200;
     font-size: 1.5em;
-    margin-left: 55px;
+    margin-left: 3.1em;
 }
 nav a:hover{
     color:var(--second-color);
@@ -44,13 +44,13 @@ nav a:hover{
 }
 .button-contact{
     color: var(--white);
-    font-size: 24px;
+    font-size: 1.1em;
     font-weight: 200;
     background-color: #FF9593;
     border: 1px solid var(--second-color);
-    border-radius: 35px;
-    padding: 8px 40px;
-    margin-left: 45px;
+    border-radius: 2em;
+    padding: 0.5em 2.1em;
+    margin-left: 2em;
     cursor: pointer;
 }
 .button-contact:hover{
@@ -77,9 +77,9 @@ nav a:hover{
 }
 img.coders{
     width: 500px;
-    border-radius: 0 0 250px 250px;
-    padding-top: 45px; 
-    margin: 22px;                  
+    border-radius: 0 0 16em 16em;
+    padding-top: 2.3em; 
+    margin: 1.2em;                  
 }
 /*part right*/
 .main-text{
@@ -89,7 +89,7 @@ img.coders{
 }
 h1{
     font-size: 6em;
-    line-height: 70px;
+    line-height: 0.8em;
     font-weight: 400;
     color: #CD5C6E;
     width: 4em;
@@ -103,12 +103,12 @@ h3.desc{
 }
 .action-main, button.action{
     background-color: var(--second-color);
-    border-radius: 35px;
+    border-radius: 2em;
     color: var(--white);
-    font-size: 24px;
+    font-size: 1.3em;
     font-weight: 400;
     border: none;
-    padding: 15px 40px;
+    padding: 0.8em 1.8em;
 }
 /*personal page flexbox with 2 divs*/
 .hero{
@@ -127,9 +127,9 @@ h3.desc{
 }
 /*part right*/
 .main-text2{
-    padding-top: 80px;
-    width: 520px;
-    margin-left: 80px;
+    padding-top: 5em;
+    width: 33em;
+    margin-left: 5em;
 }
 .text{
     font-size: 20px;
