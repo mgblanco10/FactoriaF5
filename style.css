@@ -407,13 +407,88 @@ a.card{
     }
 
 }
-/* in process...
-@media screen and (max-width: 576px) {
-    div.hero-main{
-        padding: 80px 0;
+
+@media screen and (max-width: 375px) {
+
+    .eliminar{
+        display: none;
+    }
+    .logo{
+        font-family: 'Alumni Sans', sans-serif;
+        color: var(--white);
+        font-size: 2.1em;
+        align-items: baseline;
+    }
+    .button-contact{
+        
+        font-size: 0.6em;
+        padding: 0.3em 1em;
+        margin-left: 1em;
+    }
+    .hero-main, .hero{
+        align-items: unset;
+        padding: 2em 0 2em 0;
         justify-content: center;
+        width: 100%;
+        padding: 1em 0.5em;
+    }
+    .bg, .bg-div{
+        width: 10em;
+        height: 10em;
+        border-radius: 5em 0 5em 5em;
+        margin: 0;
+    }
+    .girls{
+        height: 10.33em; 
+        top: -0.8em;
+        left: -0.8em;          
+    }
+    .bg-div{
+        padding-top: 0;
+    }
+    .coders{
+        height: 11em;
+        padding-bottom: 0.8em;
+    }
+    .main-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-text2, .main-text{
+        padding: 0;
+        margin-left: 0.5em;
         text-align: center;
     }
+    h1, .contact-box__title {
+        font-size: 1.8em;
+        width: 100%;
+    }
+    h3.desc{
+        font-size: 0.8em;
+        margin-bottom: 1em;
+    }
+    .action-main{
+        font-size: 0.8em;
+        padding: 0.3em 1em;
+    }
+    a.card{
+        flex-direction: row;
+    }
+
+a.card img{
+    height: 11em;
+}
+    ul.team-profiles{
+        padding: 2em 1em;
+        margin: 0;
+    }
+    ul.team-profiles li:first-child{
+        padding-left: 0;
+    }
+
+
     .contacts-footer{
         flex-direction: column;
         align-content: center;
@@ -421,9 +496,7 @@ a.card{
     .contacts-footer li{
         margin-bottom: 2em;
     }
-    nav a:nth-child(1), nav a:nth-child(2){
-        display: none;
-    }
+    
     .hero{
         flex-wrap: wrap;
     }
