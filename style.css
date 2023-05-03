@@ -364,42 +364,46 @@ a.card{
 
 
 /*for small laptops and big tablets*/
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1024px) {
     header{
         padding: 0 1em;
     }
-    .bg-div{
-        display: none;
+    h1 {
+        font-size: 4.5em;
     }
-    .hero-main{
-        padding: 5em;
-        justify-content: space-evenly;
-        text-align: center;
+    h3.desc{
+        font-size: 1.5em;
     }
-    .main-text{
-        margin-left: 0px;
+    button.action-main{
+        padding: 0.44em 1.4em;
+    }
+    .hero-main, .hero{
+        align-items: unset;
+        padding: 5em 0 5em 0;
+        justify-content: center;
     }
     ul {
         flex-wrap: wrap;
     }
-    .hero{
-        align-items: unset;
-        padding: 40px;
-        justify-content: center;
-    }
-    .bg{
-        width: 250px;
-        height: 250px;
-        border-radius: 125px 0 125px 125px;
-        margin: 0px;
+    .bg, .bg-div{
+        width: 18.76em;
+        height: 18.76em;
+        border-radius: 9.38em 0 9.38em 9.38em;
+        margin: 0;
     }
     .girls{
-        height: 277px; 
-        top: -13px;
-        left: -13px;          
+        height: 20.63em; 
+        top: -0.8em;
+        left: -0.8em;          
     }
-    .main-text2{
-        padding: 0;
+    .bg-div{
+        padding-top: 0;
+    }
+    .coders{
+        height: 17.3em;
+    }
+    .main-text2, .main-text{
+        padding: 0 0 0 4em;
     }
 
 }
