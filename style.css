@@ -368,7 +368,7 @@ a.card{
     header{
         padding: 0 1em;
     }
-    h1 {
+    h1, .contact-box__title {
         font-size: 4.5em;
     }
     h3.desc{
