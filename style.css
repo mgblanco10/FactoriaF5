@@ -183,8 +183,8 @@ ul.team-profiles{
 }
 a.card span:nth-child(2){
     color:black;
-    font-size: 0.7em;
-    font-weight: 400;
+    font-size: 0.6em;
+    font-weight: 00;
     margin-top: 0.1em;
 }
 a.card span:nth-child(3){
@@ -419,7 +419,7 @@ a.card{
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
 
     .eliminar{
         display: none;
@@ -431,7 +431,6 @@ a.card{
         align-items: baseline;
     }
     .button-contact{
-        
         font-size: 0.6em;
         padding: 0.3em 1em;
         margin-left: 1em;
@@ -472,17 +471,34 @@ a.card{
         margin-left: 0.5em;
         text-align: center;
     }
+    .text{
+        font-size: 0.7em;
+        margin-right: 1em;
+    }
     h1, .contact-box__title {
         font-size: 1.8em;
         width: 100%;
     }
+    .name{
+        margin-bottom: -8px;
+    }
     h3.desc{
-        font-size: 0.8em;
-        margin-bottom: 1em;
+        font-size: 0.9em;
     }
     .action-main{
         font-size: 0.8em;
         padding: 0.3em 1em;
+    }
+    button.action{
+        font-size: 0.8em;
+    }
+    div.contacts{
+        margin: 5px 0px 0px 5px;
+        padding: 0px;
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
+
     }
     a.card{
         flex-direction: row;
@@ -528,8 +544,14 @@ a.card{
     border-radius: 0.3em;
     position: absolute;
     margin-top: -55px;
-    margin-left: 55px;
-
+    margin-left: 70px;
     }  
+    .icon-personal{
+        height: 2.2em;
+        width: 2.2em;
+        border-radius: 0.3em;
+        position:relative;
+        margin-top: 12px;
+    }
      
 }
