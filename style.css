@@ -422,6 +422,9 @@ a.card{
     .main-text2, .main-text{
         padding: 0 0 0 4em;
     }
+    .footer{
+        height: 33em;
+    }
 
 }
 
@@ -498,9 +501,9 @@ a.card{
     button.action{
         font-size: 0.7em;
         font-family: 'Jost';
-        width: 100px;
-        padding: 0.8em;
-        margin-right: 2em;
+        width: 110px;
+        padding: 0.6em;
+        margin-right: 2.5em;
     }
     div.contacts{
         margin: 5px 0px 0px 5px;
@@ -561,7 +564,8 @@ a.card{
         width: 2.1em;
         border-radius: 0.3em;
         position:relative;
-        margin-top: 18px;
+        margin-top: 1em;
+        margin-right: 0.8em;
     }
      
 }
