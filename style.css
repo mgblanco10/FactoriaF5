@@ -201,6 +201,12 @@ a.card{
 .icon{
     margin-top: 2em;
 }
+.icon-personal{
+    margin: 2em;
+    height: 3em;
+    width: 3em;
+    border-radius: 0.3em;
+}
 
 /*form*/
 
@@ -490,7 +496,11 @@ a.card{
         padding: 0.3em 1em;
     }
     button.action{
-        font-size: 0.8em;
+        font-size: 0.7em;
+        font-family: 'Jost';
+        width: 100px;
+        padding: 0.8em;
+        margin-right: 2em;
     }
     div.contacts{
         margin: 5px 0px 0px 5px;
@@ -547,11 +557,11 @@ a.card{
     margin-left: 70px;
     }  
     .icon-personal{
-        height: 2.2em;
-        width: 2.2em;
+        height: 2.1em;
+        width: 2.1em;
         border-radius: 0.3em;
         position:relative;
-        margin-top: 12px;
+        margin-top: 18px;
     }
      
 }
