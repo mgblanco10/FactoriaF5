@@ -220,54 +220,54 @@ a.card{
     --border-width         : .825em;
     --border-radius-outer  :     0.5em;
     --border-radius-inner  : calc(var(--border-radius-outer) / 2);
-   
+
     box-sizing: border-box;
     line-height: 1.4
-  }
-  
+}
+
   *, *:before, *:after { 
     box-sizing: inherit 
-    }
-  
-  main.form {
+}
+
+main.form {
     padding: 3em 0;
     display: flex;
     justify-content: center; 
     align-items: center;
-  }
-  
-  .rainbow {
+}
+
+.rainbow {
     width:  100%;
     height:  100%;
     animation: o-rotate-360 linear 8s infinite;}
-  
+
 .rainbow span {
-      display: block;
-      width: 100%; 
-      height: 100%;
-      position: relative;
-      transform: translate(-50%, -50%);}
-  
+    display: block;
+    width: 100%; 
+    height: 100%;
+    position: relative;
+    transform: translate(-50%, -50%);}
+
 .rainbow span:after {
-        display: block;
-        content: "";
-        width: 100%; height: 100%;
-        position: absolute;
-        left: 100%;
-    }
-  
+    display: block;
+    content: "";
+    width: 100%; height: 100%;
+    position: absolute;
+    left: 100%;
+}
+
 .rainbow span:first-child {
-        background: var(--color-first);
-    }
+    background: var(--color-first);
+}
 .rainbow span:first-child:after { 
-        background: var(--color-second) 
-    }
+    background: var(--color-second) 
+}
 .rainbow span:last-child {
-         background: var(--color-third);
-        }
+    background: var(--color-third);
+}
 .rainbow span:last-child:after { 
-        background: var(--color-forth) 
-    }
+    background: var(--color-forth) 
+}
 
 .contact-box {
     width :  var(--block-width);
@@ -279,28 +279,28 @@ a.card{
     
 }
 .contact-box__wrapper {
-      width : calc(100% - var(--border-width));
-      height: calc(100% - var(--border-width));
-      position: absolute;
-      top: 50%; 
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: var(--white);
-      border-radius: var(--border-radius-inner);
-    }
+    width : calc(100% - var(--border-width));
+    height: calc(100% - var(--border-width));
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    border-radius: var(--border-radius-inner);
+}
     
 .contact-box__title {
-        font-size: 5em;
-        color: #CD5C6E;
-        font-weight: 400;
-        margin: 0.25em 0;
-    }
-  
+    font-size: 5em;
+    color: #CD5C6E;
+    font-weight: 400;
+    margin: 0.25em 0;
+}
+
 @keyframes o-rotate-360 {
     0% { transform: rotate(0) }
-  
+
     100% { transform: rotate(360deg) }
-  }
+}
 .input{
     font-size: 1.25em;
     margin-bottom: 1em;
@@ -308,27 +308,27 @@ a.card{
     outline: none;
     border-width: 0.0625em;
     padding: 0.5em;
-  }
+}
 .input:hover, .input:active, .input:focus{
     border-color: var(--color-third);
     box-shadow: 0 0 0 0.1875em hsla(335, 75%, 64%, .25);
     transition: all 300ms ease;
-  }
+}
 .align-center {
     text-align: center;
-  }
+}
 
-  form{
+form{
     display: flex;
     flex-direction: column;
     padding: 0 5em;
-  }
-  .description{
+}
+.description{
     color: #5e5e5e;
     font-size: 1.5em;
     margin-bottom: 2em;
-  }
-  .form-submit{
+}
+.form-submit{
     padding: 0.5em;
     font-size: 1.5em;
     background-color: var(--main-color);
@@ -339,13 +339,13 @@ a.card{
     width: 10em;
     margin-left: auto;
     margin-right: auto;
-  }
-  .form-submit:hover{
+}
+.form-submit:hover{
     background-color: var(--second-color);
     box-shadow: 0 0 0 0.1875em hsla(335, 75%, 64%, .25);
     transition: all 300ms ease;
     cursor: pointer;
-  }
+}
 
 /*footer contacts*/
 .contacts-footer{
@@ -374,10 +374,10 @@ a.card{
 .contacts-footer a:hover{
     color:var(--second-color);
 }
-  .icons-contact{
+.icons-contact{
     width: 2.5em;
     height: 2.5em;
-  }
+}
 
 
 /*for small laptops and big tablets*/
@@ -425,7 +425,6 @@ a.card{
     .footer{
         height: 33em;
     }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -550,16 +549,16 @@ a.card{
         height: 3em;
         font-size: 1.3em;
     }
-  
-    img.icon{
-    height: 2.2em;
-    width: 2.2em;
-    border-radius: 0.3em;
-    position: absolute;
-    margin-top: -55px;
-    margin-left: 70px;
+
+    img.icon {
+        height: 2.2em;
+        width: 2.2em;
+        border-radius: 0.3em;
+        position: absolute;
+        margin-top: -55px;
+        margin-left: 70px;
     }  
-    .icon-personal{
+    .icon-personal {
         height: 2.1em;
         width: 2.1em;
         border-radius: 0.3em;
@@ -567,5 +566,4 @@ a.card{
         margin-top: 1em;
         margin-right: 0.8em;
     }
-     
 }
