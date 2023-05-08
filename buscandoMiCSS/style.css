@@ -1,0 +1,104 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.subtitle{
+    font-weight: bold;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #322B86;
+}
+body{
+    background-color:#bdbfda;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    background-color: white;
+    width: 370px;
+    height: 540px;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 6px;
+    text-align: center;
+}
+.social-login{
+    display: flex;
+    justify-content: center;
+}
+.google-btn{
+    width: 240px;
+    height: 50px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid rgb(197, 193, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-text{
+    text-align: center;
+    font-weight: bold;
+}
+.fb-btn{
+    background-color: white;
+    border-radius: 6px;
+    border: 3px solid #322B86;
+    margin-left:10px;
+}
+img{
+    height: 20px;
+    width: 35px;
+    background-color: white;
+}
+.or{
+    font-weight: bold;
+}
+/* p.or::before, p.or::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    border-top: 1px solid black;
+    width: 40%;
+  }
+  
+  p.or::before {
+    left: 0;
+  }
+  
+  p.or::after {
+    right: 0;
+  } */
+label{
+    font-size: larger;
+    font-weight:bolder; 
+    color: rgb(197, 193, 193);
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 32px;
+}
+input{
+    width: 280px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid rgb(197, 193, 193);
+    padding-left: 10px;
+    letter-spacing:0.07em;
+}
+.cta-btn{
+    background-color:#322B86;
+    border: 0px;
+    width: 296px;
+    height: 50px;
+    border-radius: 6px;
+    display: flex;
+    margin: 30px 35px;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.forget-pass{
+    font-weight: bold;
+    font-size: larger;
+}

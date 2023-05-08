@@ -1,0 +1,136 @@
+/* mobile:  hata 576px
+tablet: entre 768px a 992px
+Desktop: entre 1200px a 1440px */
+/* tamaño letra 32px fondo color #E5E5E5 */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
+
+*{
+    font-size: 32px;
+    font-family: Barlow;
+    background-color: #E5E5E5 ;
+    color: red;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    border: 10px solid black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 10px solid black;
+}
+
+.box {
+    flex: 1;
+    text-align: center;
+    background-color:yellow;
+    border: 10px solid blue;
+}
+
+
+.banner {
+    background-color: yellow;
+    border: 10px solid red;
+}
+
+main{
+    display: flex;
+    border: 10px solid black;
+    margin: 10px 0px;
+    /* flex-direction: column;  */
+    
+} 
+.articulos{
+    display: flex;
+    flex-direction: row;
+}
+.column1, .column2{
+    flex:1;
+}
+.seccion1{
+    width: 50%;
+    background-color: yellow;
+    border: 10px solid blue;
+    text-align: center;
+}
+.seccion2{
+    width: 50%;
+    background-color: red;
+    border-left: 10px solid black;
+}
+
+.seccion2 .box2{
+    background-color: yellow;
+    border: 10px solid red;
+    text-align: center;
+}
+
+.footer {
+    border: 10px solid black;
+    background-color: yellow;
+    text-align: center;
+}  
+/* Tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+  main{
+      flex-wrap: wrap;
+
+  }
+  .seccion1 {
+      width: 100%;
+    }
+    
+    .seccion2 {
+      border-left: none;
+      border-top: 10px solid black;
+      width: 100%;
+    }    
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+      }
+      nav{
+        flex-direction: column;
+      }
+      .box{
+        width: 94%;
+      }
+    
+    .box, .box2, .footer {
+        color: blue;
+    }
+    main {
+        flex-direction: column;
+    }
+    .articulos {
+        flex-direction: column;
+    }
+  
+      .seccion1 {
+        width: 94%;
+        border: 10px solid red;
+      }
+      .seccion2 {
+        width: 100%;
+        border-left: none;
+      }
+      .box{
+        border: 10px solid red;
+      }
+      .opciones {
+        flex-direction: column;
+        margin-top: 10px solid black;
+      }
+      .box2 {
+        margin-top: 10px solid black;
+      }
+      .footer {
+        flex-direction: column;
+      }
+  }

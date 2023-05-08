@@ -1,0 +1,53 @@
+header{
+    border: 5px solid red;
+    padding: 20px;
+    margin: 20px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    border: 5px solid green;
+    padding: 20px;
+    margin:0px 20px;
+    position: relative;
+}
+footer{
+    border: 5px solid blue;
+    padding: 20px;
+    margin:0px 20px;
+}
+.logo{
+    width: 100px;
+}
+nav{
+    border: 5px solid black;
+    display: flex;
+    /* width: 200px;
+    justify-content: space-between; */
+}
+.circle{
+    margin: 5px;
+    background-color: gray;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+.three {
+    background-color: red;
+}
+.four{
+    background-color: blue;
+}
+.divCircle{
+    background-color: rosybrown;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    position: absolute;
+    top: -40px;
+    left: 370px;
+}
