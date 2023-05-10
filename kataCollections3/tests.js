@@ -194,5 +194,38 @@ describe("Operaciones iterables", () => {
 
     // Bonus: Escribe un test como los anteriores con algún ejemplo que utilice 
     // una lista alguna de las funciones que hemos visto, como map o filter.
-    
+    //Laura ó Alex si estás viendo esto espero que lleguen al final antes de ir por un café 
+    it("Test realizado por Mónica Blanco donde se puede convertir un array de números en un array de strings", () => {
+        let numeros = [1, 2, 3, 4, 5];
+        
+        let strings = numeros.map(num => num.toString());
+      
+        expect(strings).to.eql(["1", "2", "3", "4", "5"]);
+      });
+
+      it("Otro test realizado por mi: ¿Eres un/a experto/a en café? ", () => {
+        let preguntas = ["¿Qué es un café americano?", "¿Qué es un café latte?", "¿Cuál es la diferencia entre un café con leche y un cortado?"];
+      
+        // un map para crear una nueva lista que incluya la respuesta correcta a cada pregunta
+        let respuestas = preguntas.map(pregunta => {
+          switch(pregunta) {
+            case "¿Qué es un café americano?":
+              return "Es un café negro al que se le agrega agua caliente.";
+            case "¿Qué es un café latte?":
+              return "Es un café espresso con leche vaporizada y una pequeña cantidad de espuma de leche.";
+            case "¿Cuál es la diferencia entre un café con leche y un cortado?":
+              return "El café con leche tiene más leche que el cortado, que es principalmente espresso con una pequeña cantidad de leche.";
+            default:
+              return "No se encontró respuesta para esta pregunta.";
+          }
+        });
+      
+        expect(respuestas).to.have.same.members([
+          "Es un café negro al que se le agrega agua caliente.",
+          "Es un café espresso con leche vaporizada y una pequeña cantidad de espuma de leche.",
+          "El café con leche tiene más leche que el cortado, que es principalmente espresso con una pequeña cantidad de leche."
+        ]);
+      });
+      
+
 })
