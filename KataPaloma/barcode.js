@@ -13,15 +13,16 @@ function scanBarcode(barcode){
     }
 }
 
-function totalCommand(products){
-    // const total = this.scannedItems.reduce((acc, curr) => acc + curr, 0);
-    // return `Total: $${total.toFixed(2)}`;
-    if(!products){
-        return 'Total: $0.00'
-    }else{
-        return 'Total: $19.75';
-    }
+
+function totalCommand(array){
+    const prices = array.map(scanBarcode);
+    const total = prices.reduce((acc, curr) => acc + curr, 0);
+    return `Total: $${total}`;
 }
+
+console.log(totalCommand([12345, 23456])); // Total: $19.75
+console.log(totalCommand([12345, 99999])); // Total: $7.25
+
 
 module.exports= {
     scanBarcode, 

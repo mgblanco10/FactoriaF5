@@ -1,0 +1,5 @@
+body{
+    padding-top: 70px;
+    /* background-color: rgb(17, 0, 255); */
+}
+.drop{ filter: drop-shadow(20px 0px 100px rgba(231, 34, 83, 0.7))}
