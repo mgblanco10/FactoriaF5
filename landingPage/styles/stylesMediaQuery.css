@@ -1,0 +1,334 @@
+/*for small laptops and big tablets*/
+@media screen and (max-width: 1199px) {
+    header{
+        padding: 0 1em;
+    }
+    h1, .contact-box__title {
+        font-size: 4.5em;
+    }
+    h3.desc{
+        font-size: 1.5em;
+    }
+    button.action-main{
+        padding: 0.44em 1.4em;
+    }
+    .hero-main, .hero{
+        align-items: unset;
+        padding: 5em 0 5em 0;
+        justify-content: center;
+    }
+    ul {
+        flex-wrap: wrap;
+    }
+    .bg, .bg-div{
+        width: 18.76em;
+        height: 18.76em;
+        border-radius: 9.38em 0 9.38em 9.38em;
+        margin: 0;
+    }
+    .girls{
+        height: 20.63em; 
+        top: -0.8em;
+        left: -0.8em;          
+    }
+    .bg-div{
+        padding-top: 0;
+    }
+    .coders{
+        height: 17.3em;
+    }
+    .main-text2, .main-text{
+        padding: 0 0 0 4em;
+    }
+    button.action{
+        margin-left: 1em;
+    }
+
+}
+@media screen and (max-width: 885px) {
+    .eliminar{
+        display: none;
+    }
+    .logo{
+        font-family: 'Alumni Sans', sans-serif;
+        color: var(--white);
+        font-size: 3em;
+        align-items: baseline;
+    }
+    .button-contact{
+        font-size: 1em;
+        padding: 0.3em 1em;
+    }
+    .hero-main, .hero{
+        align-items: unset;
+        justify-content: center;
+        width: 95%;
+        padding: 2em 1em;
+    }
+    .bg, .bg-div{
+        width: 15em;
+        height: 15em;
+        border-radius: 7.5em 0 7.5em 7.5em;
+        margin: 0;
+    }
+    img.girls{
+        height: 16.5em;          
+    }
+    .bg-div{
+        padding-top: 0;
+    }
+    .coders{
+        height: 16.25em;
+        padding-bottom: 1.2em;
+    }
+    .main-text, .main-text2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-text2, .main-text{
+        padding: 0;
+        margin-left: 0.5em;
+        text-align: center;
+    }
+    h1, .contact-box__title {
+        font-size: 2.8em;
+        width: 100%;
+    }
+    h3.desc{
+        font-size: 1.2em;
+        margin-bottom: 1em;
+    }
+    .action-main{
+        font-size: 0.8em;
+        padding: 0.3em 1em;
+    }
+    
+    .text{
+        font-size: 0.8em;
+        text-align: justify;
+        width: 80%;
+    }
+    
+    .main-text2{
+        margin-left: 1em;
+    }
+    .contacts{
+        margin-top: 1em;
+    }
+
+    button.action{
+        margin-left: 1em;
+    }
+    li.card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .photo-link img{
+        height: 11em;
+    }
+    ul.team-profiles{
+        padding: 2em 0;
+        margin: 0;
+        width: 100%;
+    }
+    .name-footer{
+        font-size: 1.5em;
+    }
+    .text-footer{
+        font-size: 1em;
+    }
+    .icon{
+        width: 2em;
+        height: 2em;
+    }
+    .person-data{
+        margin: 0 0.5em 0 5em;
+    }
+
+    .nav-small{
+        font-size: 1.5em;
+    }
+    form{
+        padding: 0 5em;
+    }
+    .description, .input{
+        font-size: 1.2em;
+    }
+    .form-submit, button.action{
+        font-size: 1em;
+        width: 8em;
+        padding: 0.5em 1em;
+    }
+    .contact-box {
+        width :  28em;
+        height:  34em;
+    }
+    .contact-box__wrapper{
+        padding-top: 1em;
+    }
+    .contacts-footer{
+        align-content: center;
+        padding: 2em;
+    }
+    .contacts-footer li{
+        margin-bottom: 2em;
+        font-size: 1em;
+    }
+    .contacts-footer a{
+        margin-top: 1.4em;
+    }
+    .icons-contact{
+        width: 2.3em;
+        height: 2.3em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .eliminar{
+        display: none;
+    }
+    .logo{
+        font-family: 'Alumni Sans', sans-serif;
+        color: var(--white);
+        font-size: 2.1em;
+        align-items: baseline;
+    }
+    .button-contact{
+        
+        font-size: 0.6em;
+        padding: 0.3em 1em;
+        margin-left: 1em;
+    }
+    .hero-main, .hero{
+        align-items: unset;
+        padding: 2em 0 2em 0;
+        justify-content: center;
+        width: 100%;
+        padding: 1em 0.5em;
+    }
+    .bg, .bg-div{
+        width: 10em;
+        height: 10em;
+        border-radius: 5em 0 5em 5em;
+        margin: 0;
+    }
+    img.girls{
+        height: 11em;          
+    }
+    .bg-div{
+        padding-top: 0;
+    }
+    .coders{
+        height: 11em;
+        padding-bottom: 0.8em;
+    }
+    .main-text, .main-text2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-text2, .main-text{
+        padding: 0;
+        margin-left: 0.5em;
+        text-align: center;
+    }
+    h1, .contact-box__title {
+        font-size: 1.8em;
+        width: 100%;
+    }
+    h3.desc{
+        font-size: 0.8em;
+        margin-bottom: 1em;
+    }
+    .action-main{
+        font-size: 0.8em;
+        padding: 0.3em 1em;
+    }
+    
+    .text{
+        font-size: 0.6em;
+        text-align: center;
+    }
+    .main-text2{
+        margin-left: 1em;
+    }
+    .girls{
+        height: 10.33em; 
+        top: -0.8em;
+        left: -0.8em;          
+    }
+    .contacts{
+        margin-top: 1em;
+    }
+    button.action{
+        margin-left: 1em;
+    }
+    li.card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .photo-link img{
+        height: 11em;
+    }
+    ul.team-profiles{
+        padding: 2em 0;
+        margin: 0;
+        width: 100%;
+    }
+    .name-footer{
+        font-size: 1.4em;
+    }
+    .text-footer{
+        font-size: 0.8em;
+    }
+    .icon{
+        width: 1.8em;
+        height: 1.8em;
+    }
+    .person-data{
+        margin: 0 0.5em 0 0.5em;
+    }
+    .nav-small{
+        font-size: 1em;
+    }
+    form{
+        padding: 0 3.5em;
+    }
+    .description, .input{
+        font-size: 0.9em;
+    }
+    .form-submit, button.action{
+        font-size: 0.8em;
+        width: 8em;
+        padding: 0.5em 1em;
+    }
+    .contact-box {
+        width :  21em;
+        height:  25em;
+    }
+    .contact-box__wrapper{
+        padding-top: 1em;
+    }
+    .contacts-footer{
+        align-content: center;
+        padding: 1.5em 0em;
+    }
+    .contacts-footer li{
+        font-size: 0.7em;
+        font-weight: 400;
+    }
+    .contacts-footer a{
+        margin-top: 1em;
+    }
+    .icons-contact{
+        width: 2em;
+        height: 2em;
+    }
+
+}
