@@ -1,9 +1,11 @@
 const nombreSacrificado = document.getElementById('nombreSacrificado');
+
 const sacrificarBtn = document.getElementById('sacrificarBtn');
 const reiniciarBtn = document.getElementById('reiniciarBtn');
 const listaNombres = document.getElementById('listaNombres');
 const inputNombre = document.getElementById('inputNombre');
 const agregarBtn = document.getElementById('agregarBtn');
+const guardarListaBtn = document.getElementById('guardarListaBtn');
 
 let nombres = [];
 
@@ -18,12 +20,9 @@ function seleccionarNombre() {
   const nombreSeleccionado = nombres[indice];
   nombres.splice(indice, 1);
 
-  localStorage.setItem('sacrificados', JSON.stringify(nombres));
-
   nombreSacrificado.textContent = `¡${nombreSeleccionado} ha sido sacrificado!`;
   renderizarNombres();
 }
-
 
 function reiniciar() {
   nombres = [];
@@ -32,6 +31,8 @@ function reiniciar() {
   inputNombre.value = '';
   inputNombre.disabled = false;
   renderizarNombres();
+
+  localStorage.removeItem('sacrificados'); // Remover el item del localStorage
 }
 
 function agregarNombre() {
@@ -44,7 +45,6 @@ function agregarNombre() {
   }
 }
 
-
 function borrarNombre(nombre) {
   const indice = nombres.indexOf(nombre);
   if (indice !== -1) {
@@ -53,12 +53,11 @@ function borrarNombre(nombre) {
   }
 }
 
-
 function renderizarNombres() {
   listaNombres.innerHTML = '';
 
   for (let i = 0; i < nombres.length; i++) {
-    const nombre = nombres[i]; 
+    const nombre = nombres[i];
 
     const li = document.createElement('li');
     li.textContent = nombre;
@@ -66,7 +65,7 @@ function renderizarNombres() {
     const botonBorrar = document.createElement('button');
     botonBorrar.innerHTML = '<i class="fas fa-times"></i>';
     botonBorrar.addEventListener('click', () => {
-      borrarNombre(nombre); 
+      borrarNombre(nombre);
     });
 
     li.appendChild(botonBorrar);
@@ -74,26 +73,20 @@ function renderizarNombres() {
   }
 }
 
-
-
-// sacrificarBtn.addEventListener('click', seleccionarNombre);
+sacrificarBtn.addEventListener('click', seleccionarNombre);
 reiniciarBtn.addEventListener('click', reiniciar);
 agregarBtn.addEventListener('click', agregarNombre);
 
+guardarListaBtn.addEventListener('click', () => {
+  localStorage.setItem('sacrificados', JSON.stringify(nombres));
+});
+
 window.addEventListener('DOMContentLoaded', () => {
-  const sacrificadosList = document.getElementById('sacrificadosList');
   const sacrificados = JSON.parse(localStorage.getItem('sacrificados'));
 
   if (sacrificados) {
-    for (let i = 0; i < sacrificados.length; i++) {
-      const li = document.createElement('li');
-      li.textContent = sacrificados[i];
-      sacrificadosList.appendChild(li);
-    }
+    nombres = sacrificados;
+    renderizarNombres();
   }
 });
 
-sacrificarBtn.addEventListener('click', () => {
-  seleccionarNombre();
-  window.location.href = 'sacrificados.html';
-});
