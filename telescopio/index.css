@@ -1,0 +1,25 @@
+/* absolute position the telescope icon in the bottom left corner of the page */
+svg.telescope {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+
+/* animate the lens to rotate up and down, using the stand as a hinge */
+svg.telescope g.lens {
+    animation: starGaze 6s ease-in-out infinite alternate;
+  }
+
+/* pause in between animations by holding a value for a longer period of time */
+@keyframes starGaze {
+    0%,
+    30% {
+      transform: rotate(-10deg);
+    }
+    60%,
+    100% {
+      transform: rotate(-50deg);
+    }
+  }
