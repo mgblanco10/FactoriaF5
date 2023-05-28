@@ -1,0 +1,30 @@
+.img {
+    width: 150px;
+    height: 150px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 14px;
+}
+
+label {
+    margin-top: 20px;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    width: 260px;
+    cursor: pointer;
+}

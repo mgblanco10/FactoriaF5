@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ejercicio Fideúa</title>
+</head>
+<body>
+    <form id="miFormulario">
+        <label for="arroz">Precio del arroz</label>
+        <input type="number" min="0"  placeholder="Ingrese precio del arroz por Kilo" id="arroz">
+        <label for="calamares">Precio de los calamares</label>
+        <input type="number" min="0"  placeholder="Ingrese precio de los calamares por Kilo" id="calamares">
+        <label for="gambas">Precio de las gambas</label>
+        <input type="number" min="0" placeholder="Ingrese precio de las gambas por Kilo" id="gambas">
+        <label for="personas">Número de personas</label>
+        <input type="number" min="0" placeholder="Ingrese el numero de personas" id="personas">
+        <input type="submit" value="Enviar" class="enviar" onclick="calcularPrecio(event)">
+    </form>
+    <img src="imagen.png" alt="Imagen de chica vestida con traje tipo de flamenco español con abanico" class="img">
+    <script src="index.js"></script>
+</body>
+</html>
