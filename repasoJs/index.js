@@ -40,3 +40,32 @@ const ciudades = [
 
 const ciudadesSoleadas = ciudades.filter((element)=> element.soleada)
 console.log(ciudadesSoleadas);
+
+// destructuración
+const coder = {
+    nombre: "Monica",
+    edad: 18,
+    sexo: "mujer"
+}
+
+let { nombre: name, edad, sexo} = coder;
+console.log(name);
+console.log(edad);
+
+const coders = [
+    {nameCoder: "Joseita",
+    age: 25,
+    sex: "mujer"
+    },
+    {nameCoder: "Andrés",
+    age: 29,
+    sex: "hombre"
+    }
+]
+const {nameCoder, age, sex} = coders[1]
+console.log(nameCoder)
+
+const myData = (...data) =>{
+    return console.log(data)
+}
+myData({nombre1: "Alex", nombre2: "Matias", nombre3: "Cindi"})
