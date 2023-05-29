@@ -29,3 +29,14 @@ console.log(duplicate2(4));
 
 const otroEjemplo = ()=> 2+2;
 console.log(otroEjemplo());
+
+
+//filter
+const ciudades = [
+    {ciudad:"barcelona", soleada: true},
+    {ciudad:"londres", soleada: false},
+    {ciudad:"sevilla", soleada: true}
+]
+
+const ciudadesSoleadas = ciudades.filter((element)=> element.soleada)
+console.log(ciudadesSoleadas);
