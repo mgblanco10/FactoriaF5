@@ -41,7 +41,7 @@ const ciudades = [
 const ciudadesSoleadas = ciudades.filter((element)=> element.soleada)
 console.log(ciudadesSoleadas);
 
-// destructuración
+// destructuración y rest parameter
 const coder = {
     nombre: "Monica",
     edad: 18,
@@ -68,4 +68,17 @@ console.log(nameCoder)
 const myData = (...data) =>{
     return console.log(data)
 }
-myData({nombre1: "Alex", nombre2: "Matias", nombre3: "Cindi"})
+myData({nombre1: "Alex", nombre2: "Matias", nombre3: "Cindi"});
+
+// press operator
+const array1 = [ 1, 2, 3];
+const array2 = [4, 5, 6];
+const result = array1.concat(array2)
+console.log(result)
+
+const result2 = [...array1, 'hola', ...array2];
+console.log(result2);
+
+const arr = [1, 2, 3]
+const num = Math.max(...arr);
+console.log(num);
