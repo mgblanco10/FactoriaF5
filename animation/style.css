@@ -1,0 +1,15 @@
+
+#start-screen {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#start-screen {
+    z-index: 999;
+    background-image: url("https://images-ext-2.discordapp.net/external/r9suWJIUogZ8wa0k6zw7qhKs7ABi-tn-VVtfuVTE64Q/http/68.media.tumblr.com/73e4d1193aaf3afb18e891f4fc5db13f/tumblr_osl2g7FpHp1tiwiyxo1_1280.gif?width=500&height=281");
+}
+
